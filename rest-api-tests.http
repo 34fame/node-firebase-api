@@ -1,0 +1,31 @@
+GET {{baseUrl}}/projects
+Accept: application/json
+Cache-Control: no-cache
+
+###
+POST {{baseUrl}}/projects
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+   "category": "34 Fame",
+   "name": "Documentation Site",
+   "icon": "fas fa-book",
+   "status": "On-Hold"
+}
+
+###
+PUT {{baseUrl}}/projects/lpstt3v
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+   "status": "Open"
+}
+
+###
+DELETE {{baseUrl}}/projects/lpstt3v
+Accept: */*
+Cache-Control: no-cache
